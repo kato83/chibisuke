@@ -4,20 +4,20 @@
   "description": "A small but powerful CSS framework, the name is Chibisuke.",
   "main": "dist/chibisuke.css",
   "keywords": [
-		"bootstrap",
-		"html",
-		"html5",
-		"css",
-		"css3",
-		"flexbox",
-		"front-end",
-		"framework",
-		"responsive",
-		"mobile",
-		"mobile-first",
-		"sass",
-		"scss"
-	],
+    "bootstrap",
+    "html",
+    "html5",
+    "css",
+    "css3",
+    "flexbox",
+    "front-end",
+    "framework",
+    "responsive",
+    "mobile",
+    "mobile-first",
+    "sass",
+    "scss"
+  ],
   "scripts": {
     "watch": "node run.js"
   },
@@ -33,6 +33,7 @@
   "homepage": "https://github.com/kato83/chibisuke#readme",
   "dependencies": {
     "chokidar": "^2.1.2",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "strip-bom": "^3.0.0"
   }
 }

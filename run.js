@@ -3,6 +3,7 @@ const path     = require("path").resolve();
 const sass     = require("node-sass");
 const chokidar = require('chokidar');
 const zlib     = require('zlib');
+const stripBom = require('strip-bom');
 const p        = require("./package.json");
 
 //CSS inline license
@@ -50,10 +51,13 @@ chokidar.watch(sassPath, { ignored: /[\/\\]\./ }).on('all', (event, path) => {
             outputStyle: "compressed"
         }, (err, result) => {
             if (!err) {
-                fs.writeFileSync(renderFileName + ".min.css", license + result.css);
+
+                let data = stripBom(result.css.toString());
+                data = "@charset \"UTF-8\";" + data;
+                fs.writeFileSync(renderFileName + ".min.css", license + data);
 
                 //gzip
-                zlib.gzip(license + result.css, (err, binary) => {
+                zlib.gzip(license + data, (err, binary) => {
                     fs.writeFileSync(renderFileName + ".min.css.gz", binary);
                 });
             } else {
