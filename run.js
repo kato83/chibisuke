@@ -3,7 +3,7 @@ const path     = require("path").resolve();
 const sass     = require("node-sass");
 const chokidar = require('chokidar');
 const zlib     = require('zlib');
-
+const p        = require("./package.json");
 
 //CSS inline license
 const info = process.env;
@@ -11,11 +11,11 @@ const year = new Date().getFullYear();
 
 license  = "";
 license += "/*!\n";
-license += " * " + info.npm_package_name + " v" + info.npm_package_version + "\n";
-license += " * " + info.npm_package_homepage + "\n";
+license += " * " + p.name + " v" + p.version + "\n";
+license += " * " + p.homepage + "\n";
 license += " * \n";
-license += " * Copyright (c) " + year + " " + info.npm_package_author_name + "\n";
-license += " * Licensed under the " + info.npm_package_license + " license\n";
+license += " * Copyright (c) " + year + " " + p.author + "\n";
+license += " * Licensed under the " + p.license + " license\n";
 license += " */\n\n";
 
 
