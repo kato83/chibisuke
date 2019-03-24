@@ -1,0 +1,45 @@
+.b,
+.strong,
+.em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+p{
+    margin: 0 0 1.75rem;
+    line-height: 1.75;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: normal;
+    margin: 0 0 .5em;
+}
+
+.h1{
+    font-size: 3.0rem;
+}
+
+.h2{
+    font-size: 2.5rem;
+}
+
+.h3{
+    font-size: 2.2rem;
+}
+
+.h4{
+    font-size: 2.0rem;
+}
+
+.h5{
+    font-size: 1.85rem;
+}
+
+.h6{
+    font-size: 1.75rem;
+}

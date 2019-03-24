@@ -1,0 +1,15 @@
+.code{
+    background: $gray;
+    border-radius: .2rem;
+    padding: .2rem .4rem;
+}
+
+.pre{
+    border-left: .3rem solid $primary-color;
+    background: $gray;
+    margin: 0 0 2rem;
+    padding: 1rem;
+    word-wrap: none;
+    overflow-x: auto;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,12 @@
+.blockquote {
+    border-left: .3rem solid $gray;
+    margin: 0 0 2rem;
+    padding: 1rem;
+    word-wrap: none;
+    overflow-x: auto;
+    font-size: 1.4rem;
+}
+
+.blockquote > *:last-child {
+    margin-bottom: 0;
+}

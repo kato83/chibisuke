@@ -1,0 +1,44 @@
+.button {
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    border: solid 1px transparent;
+    background: $primary-bg-color;
+    color: $base-color;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover,
+    &:active {
+        color: $base-color;
+        background: $shadow-color;
+    }
+    &:focus {
+        outline: none;
+    }
+
+    &.button-outline{
+        background: transparent;
+        border: solid 1px $primary-bg-color;
+        color: $primary-bg-color;
+        &:hover,
+        &:active {
+            color: $shadow-color;
+            border-color: $shadow-color;
+        }
+    }
+
+    &.button-clear{
+        background: transparent;
+        border: solid 1px transparent;
+        color: $primary-bg-color;
+        &:hover,
+        &:active {
+            color: $shadow-color;
+        }
+    }
+}
