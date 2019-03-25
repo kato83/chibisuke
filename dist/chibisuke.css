@@ -295,3 +295,50 @@ p {
 .blockquote > *:last-child {
 	margin-bottom: 0;
 }
+
+.table {
+	width: 100%;
+	border-spacing: 0;
+	display: flex;
+	margin-bottom: 2rem;
+}
+
+.table thead {
+	border-right: solid 1px #dddddd;
+}
+
+.table tbody {
+	display: flex;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.table th,
+.table td {
+	text-align: left;
+	display: block;
+	border-bottom: 1px solid #dddddd;
+	padding: 1rem;
+}
+
+@media (min-width: 48rem) {
+	.table {
+		display: table;
+	}
+	.table thead {
+		border: none;
+	}
+	.table tbody {
+		display: table-row-group;
+		overflow-x: visible;
+		white-space: initial;
+	}
+	.table th,
+	.table td {
+		display: table-cell;
+	}
+	.table th:first-child,
+	.table td:first-child {
+		padding-left: 0;
+	}
+}

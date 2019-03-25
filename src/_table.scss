@@ -1,0 +1,42 @@
+.table{
+    width: 100%;
+    border-spacing: 0;
+    display: flex;
+    margin-bottom: 2rem;
+    thead{
+        border-right: solid 1px $gray;
+    }
+    tbody{
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    th,
+    td {
+        text-align: left;
+        display: block;
+        border-bottom: 1px solid $gray;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 48.0rem) {
+    .table{
+        display: table;
+        thead{
+            border: none;
+        }
+        tbody{
+            display: table-row-group;
+            overflow-x: visible;
+            white-space: initial;
+        }
+        th,
+        td{
+            display: table-cell;
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
