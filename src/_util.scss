@@ -1,0 +1,40 @@
+.chibi-16-9{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.chibi-1-1{
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.chibi-16-9 > *,
+.chibi-1-1 > *{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.chibi-float-left{
+    float: left;
+}
+
+.chibi-float-right{
+    float: right;
+}
+
+.chibi-clearfix{
+    &::after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
+
+.chibi-x-scroll{
+    overflow-x: auto;
+}
