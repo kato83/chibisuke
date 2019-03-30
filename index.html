@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="http://chibi/" target="_self">
+    <base href="https://kato83.github.io/chibisuke/" target="_self">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300" rel="stylesheet">
+    <link rel="stylesheet" href="dist/chibisuke.min.css">
+    <style>
+        header.container .header-item{
+            font-size: 0;
+            background: #dddddd;
+            padding: 10rem 0 8rem;
+            text-align: center;
+        }
+        #brand-name{
+            color: #666666;
+            font-size: calc(4.5rem + .4vw);
+            font-family: 'Dosis';
+        }
+        nav ul{
+            padding: 0;
+            display: flex;
+            align-items: baseline
+        }
+        nav ul li{
+            list-style: none;
+            padding: .5rem;
+        }
+        nav ul li:first-child{
+            margin-right: auto;
+            padding-left: 0;
+            font-size: 1.8rem;
+        }
+        nav ul li:nth-child(n + 2){
+            text-align: right;
+        }
+        nav ul li:last-child{
+            padding-right: 0;
+        }
+    </style>
+    <title>Chibisuke</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="columns">
+                <nav>
+                    <ul>
+                        <li><a class="a" href="#">Chibisuke</a></li>
+                        <li><a class="a" href="#">Docs</a></li>
+                        <li><a class="a" href="#">GitHub</a></li>
+                        <li><a class="a" href="#">Lang</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <header class="container main-visual container-full-wide">
+        <div class="row">
+            <div class="columns">
+                <div class="header-item">
+                    <h1 class="h1" id="brand-name">Chibisuke</h1>
+                    <a href="#" class="button">はじめる</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
