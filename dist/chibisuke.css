@@ -214,6 +214,7 @@ p {
 
 .a {
 	color: #7DBB7C;
+	text-decoration: none;
 }
 
 .a:hover,
@@ -271,6 +272,7 @@ p {
 	background: #dddddd;
 	border-radius: .2rem;
 	padding: .2rem .4rem;
+	font-size: 90%;
 }
 
 .pre {
@@ -347,20 +349,20 @@ img {
 	max-width: 100%;
 }
 
-.chibi-16-9 {
+.cb-16-9 {
 	position: relative;
 	width: 100%;
 	padding-top: 56.25%;
 }
 
-.chibi-1-1 {
+.cb-1-1 {
 	position: relative;
 	width: 100%;
 	padding-top: 100%;
 }
 
-.chibi-16-9 > *,
-.chibi-1-1 > * {
+.cb-16-9 > *,
+.cb-1-1 > * {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -368,20 +370,68 @@ img {
 	height: 100% !important;
 }
 
-.chibi-float-left {
+.cb-float-left {
 	float: left;
 }
 
-.chibi-float-right {
+.cb-float-right {
 	float: right;
 }
 
-.chibi-clearfix::after {
+.cb-clearfix::after {
 	clear: both;
 	content: "";
 	display: block;
 }
 
-.chibi-x-scroll {
+.cb-x-scroll {
 	overflow-x: auto;
+}
+
+.hr {
+	border: 0;
+	border-bottom: 1px solid #333333;
+	margin: 1.75rem 0 3rem;
+}
+
+.ul,
+.ol {
+	padding: 0;
+	margin: 0 0 2rem;
+}
+
+.ul ul,
+.ul ol,
+.ol ul,
+.ol ol {
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0 1rem;
+	padding-left: 2.5rem;
+}
+
+.ul li,
+.ol li {
+	margin-bottom: 1rem;
+}
+
+.ul li {
+	list-style: circle inside;
+}
+
+.ol li {
+	list-style: decimal inside;
+}
+
+.dl {
+	margin: 0 0 2rem;
+}
+
+.dl dt {
+	margin-bottom: 1rem;
+}
+
+.dl dd {
+	margin: 0 0 1rem;
+	padding-left: 2.5rem;
 }
