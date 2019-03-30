@@ -10,14 +10,16 @@ const p        = require("./package.json");
 const info = process.env;
 const year = new Date().getFullYear();
 
-license  = "";
-license += "/*!\n";
-license += " * " + p.name + " v" + p.version + "\n";
-license += " * " + p.homepage + "\n";
-license += " * \n";
-license += " * Copyright (c) " + year + " " + p.author + "\n";
-license += " * Licensed under the " + p.license + " license\n";
-license += " */\n\n";
+const license = 
+`/*!
+ * ${p.name} v${p.version}
+ * ${p.homepage}
+ * 
+ * Copyright (c) ${year} ${p.author}
+ * Licensed under the ${p.license} license
+ */
+
+`;
 
 
 //directory and filename info
